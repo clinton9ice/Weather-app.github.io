@@ -23,14 +23,17 @@
                 <div class="overlay">
 
                     <div class="degree-details">
-                        <div class="img mr">
-                            <img src="" alt="loading..." loader="lazy" app-icon>
+                        <div class="d-flex degree-head">
+                            <div class="img mr">
+                                <img src="" alt="loading..." loader="lazy" class="logo" app-icon>
+                            </div>
+
+                            <h3 class="int mr">
+                                <span app-temp></span> <sup>o</sup>
+                                <span app-measure>C</span>
+                            </h3>
                         </div>
 
-                        <h3 class="int mr">
-                            <span app-temp></span> <sup>o</sup>
-                            <span app-measure>C</span>
-                        </h3>
 
                         <div class="int-details mr">
                             <h3 app-region>
@@ -57,69 +60,70 @@
                 </form>
 
 
+                <div class="section">
+                    <div class="weather-details" app-weather-details>
+                        <h3 class="caption">Weather Details</h3>
 
-                <div class="weather-details section" app-weather-details>
-                    <h3 class="caption">Weather Details</h3>
+                        <ul class="list">
+                            <li class="list-item">
+                                <span>Cloudy</span>
+                                <span app-cloudy></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Humidity</span>
+                                <span app-humidity></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Wind direction</span>
+                                <span app-direction></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Localtime</span>
+                                <span app-localtime></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Current temperature</span>
+                                <span>
+                                    <span app-temp></span> <sup>o</sup>
+                                    <span app-measure>C</span>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span>Feels Like</span>
+                                <span>
+                                    <span app-feels_like></span> <sup>o</sup>
+                                    <span app-measure>C</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <ul class="list">
-                        <li class="list-item">
-                            <span>Cloudy</span>
-                            <span app-cloudy></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Humidity</span>
-                            <span app-humidity></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Wind direction</span>
-                            <span app-direction></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Localtime</span>
-                            <span app-localtime></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Current temperature</span>
-                            <span>
-                                <span app-temp></span> <sup>o</sup>
-                                <span app-measure>C</span>
-                            </span>
-                        </li>
-                        <li class="list-item">
-                            <span>Feels Like</span>
-                            <span>
-                                <span app-feels_like></span> <sup>o</sup>
-                                <span app-measure>C</span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="weather-location section" app-weather-location>
+                        <h3 class="caption">Weather Location</h3>
 
-                <div class="weather-location section" app-weather-location>
-                    <h3 class="caption">Weather Location</h3>
-
-                    <ul class="list">
-                        <li class="list-item">
-                            <span>Name</span>
-                            <span app-location-name></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Region</span>
-                            <span app-location-region></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Country</span>
-                            <span app-location-country></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Lattitude</span>
-                            <span app-location-lat></span>
-                        </li>
-                        <li class="list-item">
-                            <span>Longititude</span>
-                            <span app-location-lon></span>
-                        </li>
-                    </ul>
+                        <ul class="list">
+                            <li class="list-item">
+                                <span>Name</span>
+                                <span app-location-name></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Region</span>
+                                <span app-location-region></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Country</span>
+                                <span app-location-country></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Lattitude</span>
+                                <span app-location-lat></span>
+                            </li>
+                            <li class="list-item">
+                                <span>Longititude</span>
+                                <span app-location-lon></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
 

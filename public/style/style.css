@@ -27,6 +27,7 @@ body {
 .overlay {
     position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -34,6 +35,11 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 10;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -168,13 +174,44 @@ li.list-item {
 }
 
 @media screen and (max-width: 900px) {
+    .overlay {
+        display: block;
+    }
+
+    .container {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+    .degree-head {
+        flex-direction: row-reverse;
+        align-self: self-start;
+    }
+
     .app-container {
-        flex-direction: column;
-        margin-top: 25rem;
+        display: block;
+    }
+
+    .app-container .app-banner .int {
+        font-size: 1.8em;
     }
 
     .app-container .app-details {
         max-width: 100%;
+    }
+
+    .app-container .app-banner .logo {
+        width: 40px;
+    }
+
+    .app-container .app-banner .degree-details {
+        padding: 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .app-container .app-banner .int-details {
+        margin-bottom: 1rem;
+        font-size: 0.85em;
     }
 
     .app-container .app-banner {
