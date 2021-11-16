@@ -53,7 +53,7 @@ $(document).ready(function () {
             let [y, m, d] = date.split("-");
             let [h, mm] = time.split(":");
             Time = `${d} ${getDateStr(m, month)}, ${y} - ${h % 12}:${mm}`;
-            let Img = "https://source.unsplash.com/1200x900/?cloud";
+            let Img = "https://source.unsplash.com/1600x900/?sky,nature";
 
 
             //Header
