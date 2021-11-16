@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("../vendor/fonts/Comfortaa-Regular.ttf");
+}
+
+body {
+    background-image: url("../img/weather.jpg");
+    background-color: #000;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "comfortaa", Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.swal-title {
+    color: #343333;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    padding: 2rem 1rem;
+    overflow-y: auto;
+}
+
+.app-container {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 4px;
+    min-height: 140px;
+    background-color: rgba(82, 79, 79, 0.5);
+    display: flex;
+}
+
+.app-container .mr {
+    margin-right: 1rem;
+}
+
+.app-container .app-banner {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    color: #fafafa;
+}
+
+.app-container .app-banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.app-container .app-banner .img-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.app-container .app-banner .int {
+    font-size: 3em;
+}
+
+.app-container .app-banner .int sup {
+    font-size: 0.4em;
+}
+
+.app-container .app-banner .int-details {
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.app-container .app-banner .degree-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: end;
+}
+
+
+.app-container .app-details {
+    padding: 1rem;
+    max-width: 380px;
+    width: 100%;
+    margin-left: auto;
+    height: 100%;
+    place-self: flex-start;
+}
+
+.app-container .app-details .section {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+h3.caption {
+    margin-bottom: 1rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+li.list-item {
+    padding: 0.3rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.5rem;
+    height: 40px;
+}
+
+.form .form-control {
+    height: inherit;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #e5e5e57a;
+    width: 100%;
+    color: #fafafa;
+}
+
+.form .form-control:focus {
+    outline: none;
+    border-color: hsl(233, 25%, 42%);
+}
+
+.weather-btn {
+    background: hsl(233, 25%, 39%);
+    border: none;
+    font-size: 0.8em;
+    padding: 1rem;
+    line-height: 1px;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.weather-btn:hover {
+    background-color: hsl(233, 25%, 49%);
+}
+
+@media screen and (max-width: 900px) {
+    .app-container {
+        flex-direction: column;
+        margin-top: 25rem;
+    }
+
+    .app-container .app-details {
+        max-width: 100%;
+    }
+
+    .app-container .app-banner {
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    .app-container .mr {
+        margin-right: 0.2rem;
+    }
+}

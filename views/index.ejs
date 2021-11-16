@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The purpose of this is just to predict weather. This is just for demo purposes">
+    <meta name="author" content="Clinton">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body app-name="base">
+
+    <div class="container overlay">
+
+        <div class="app-container">
+
+            <div class="app-banner">
+
+                <div class="overlay">
+
+                    <div class="degree-details">
+                        <div class="img mr">
+                            <img src="" alt="loading..." loader="lazy" app-icon>
+                        </div>
+
+                        <h3 class="int mr">
+                            <span app-temp></span> <sup>o</sup>
+                            <span app-measure>C</span>
+                        </h3>
+
+                        <div class="int-details mr">
+                            <h3 app-region>
+                            </h3>
+
+                            <p app-weather-text> 06:09 - Monday, 9 Sep</p>
+                            <span>Wind speed: <span app-wind-speed></span>km/hr</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <img src="img/weather.jpg" alt="app Banner" class="img-banner" app-banner>
+
+            </div>
+
+            <div class="app-details">
+
+
+                <form method="post" class="form">
+                    <input name="city" type="text" id="weatherInput" class="form-control" placeholder="Enter a City"
+                        required>
+                    <button class="weather-btn" id="weatherBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+
+
+
+                <div class="weather-details section" app-weather-details>
+                    <h3 class="caption">Weather Details</h3>
+
+                    <ul class="list">
+                        <li class="list-item">
+                            <span>Cloudy</span>
+                            <span app-cloudy></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Humidity</span>
+                            <span app-humidity></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Wind direction</span>
+                            <span app-direction></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Localtime</span>
+                            <span app-localtime></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Current temperature</span>
+                            <span>
+                                <span app-temp></span> <sup>o</sup>
+                                <span app-measure>C</span>
+                            </span>
+                        </li>
+                        <li class="list-item">
+                            <span>Feels Like</span>
+                            <span>
+                                <span app-feels_like></span> <sup>o</sup>
+                                <span app-measure>C</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="weather-location section" app-weather-location>
+                    <h3 class="caption">Weather Location</h3>
+
+                    <ul class="list">
+                        <li class="list-item">
+                            <span>Name</span>
+                            <span app-location-name></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Region</span>
+                            <span app-location-region></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Country</span>
+                            <span app-location-country></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Lattitude</span>
+                            <span app-location-lat></span>
+                        </li>
+                        <li class="list-item">
+                            <span>Longititude</span>
+                            <span app-location-lon></span>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="vendor/jquery/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="vendor/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
