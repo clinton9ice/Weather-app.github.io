@@ -20,7 +20,11 @@
     "nodemon": "^2.0.15"
   },
   "keywords": [
-    "weather-app"
+    "weather-app",
+    "heroku"
   ],
+  "engines": {
+    "node": "16.13.0"
+  },
   "description": ""
 }
