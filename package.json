@@ -1,10 +1,9 @@
 {
-  "web": "app.js",
-  "name": "weather-app",
+  "name": "weatherApp",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node index",
+    "start": "node app",
     "dev": "nodemon app"
   },
   "author": "clinton <clintonufere@gmail.com>",
@@ -20,7 +19,7 @@
     "nodemon": "^2.0.15"
   },
   "keywords": [
-    "weather-app",
+    "weatherApp",
     "heroku"
   ],
   "engines": {
